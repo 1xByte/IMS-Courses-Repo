@@ -1,0 +1,27 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: COURSE-SERVICE
+  data:
+    mongodb:
+      username: admin
+      password: iopjkl@890
+      uri:
+        mongodb://localhost:27017/COURSE_DB
+
+
+  #import config files
+  config:
+    import: optional:configserver:http://localhost:8086
+
+
+
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8080/eureka
